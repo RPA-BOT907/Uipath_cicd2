@@ -14,7 +14,8 @@ pipeline {
           folderName: "Shared",
           environments: "environment",
           credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: “Api_key”],
-          traceLoggingLevel: 'information'
+          traceLevel: 'None',
+	  entryPointPaths: 'Main.xaml'
         )
       }
     }
