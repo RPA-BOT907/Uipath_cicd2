@@ -13,7 +13,7 @@ pipeline {
           orchestratorTenant: "DefaultTenant",
           folderName: "Shared",
           environments: "environment",
-          credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: “	Api_key”],
+          credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: “Api_key”],
           traceLoggingLevel: 'None'
         )
       }
