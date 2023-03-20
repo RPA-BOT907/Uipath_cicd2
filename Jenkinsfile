@@ -14,7 +14,7 @@ pipeline {
           folderName: "Shared",
           environments: "environment",
           credentials: [$class: 'UserPassAuthenticationEntry', credentialsId: “Api_key”],
-          traceLoggingLevel: 'None'
+          traceLoggingLevel: 'information'
         )
       }
     }
