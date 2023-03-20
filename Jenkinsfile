@@ -8,7 +8,7 @@ pipeline {
     stage ('PostBuild') {
       steps {
         UiPathDeploy (
-          packagePath:"path\C:\ProgramData\Jenkins\.jenkins\workspace\Uipath_Pipeline_main\Output\14\to\NuGetpackage",
+          packagePath:"path\\C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Uipath_Pipeline_main\\Output\\14\\to\\NuGetpackage",
           orchestratorAddress: "https://cloud.uipath.com/eidikosggfpo",
           orchestratorTenant: "DefaultTenant",
           folderName: "Shared",
@@ -21,3 +21,5 @@ pipeline {
   }
 	      
 }
+
+
